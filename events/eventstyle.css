@@ -1,0 +1,572 @@
+
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+body{
+   background-color: white;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+}
+#main {
+width:960px;
+margin:20px auto;
+font-family:raleway
+}
+span {
+color:red
+}
+h1{
+    font-family:sans-serif;
+}
+h2 {
+font-family: sans-serif;
+text-align:center;
+/*
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px
+*/
+}
+hr {
+    margin: 0 auto;
+    border-color: #1c599a;
+}
+#login {
+width:300px;
+float:left;
+background-color: #ccc;
+border-radius:10px;
+font-family:raleway;
+border:2px solid brown;
+padding:10px 40px 25px;
+margin-top:50px;
+    margin-left: 300px;
+}
+
+input[type=submit] {
+width:100%;
+background-color:#FFBC00;
+color:#fff;
+border:2px solid brown;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+
+/*~~~~~~~~~~~~~~second Header~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#top-text{
+
+    margin-top: 0 auto;
+    position:relative;
+text-align: center;
+    color: black;
+    line-height: 20px;
+}
+.logo {
+    width: 200px;
+    height: 90px;
+    content: url("http://localhost/gulbir/mishra1/VITlogo.jpg");
+}
+
+.logo2 {
+    width: 130px;
+    height: 70px;
+    content: url("http://localhost/gulbir/mishra1/logo312.jpg");
+}
+
+.textheader2-1size{
+    font-size: 40px;
+}
+.textheader2-2size{
+    font-size: 15px; 
+}
+
+
+.floatLeft { float: left; 
+
+margin-left: 50px;
+margin-bottom: 20px}
+
+.floatright { float: right; 
+margin-right: 50px;
+margin-bottom: 20px}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~MENU BAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ul {
+    width: 100%;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #264186;
+  border-top: 8px solid #264186;
+  border-bottom: 8px solid #264186;
+}
+
+li {
+  float: left;
+padding-right: 5px;
+}
+
+li a {
+    font-size: 12px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #1c599a;
+color: white;
+
+}
+
+.active {
+  background-color: #1c599a;
+color:white;
+}
+
+
+.class-button{
+color:#5b6c76;
+text-align: center;
+padding:5px;
+font-size:12px;
+cursor:pointer;
+border-radius:5px;
+margin-left: 10px;
+}
+
+  
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~VERTICAL NAVIGATION BAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  background-color: #1a8e8d;
+  color: white;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.vertical-menu hr{
+    border-color: white;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LAST FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer {
+  position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #253e66;
+   color: #fbfeff;
+   text-align: center;
+  font-size: 12px;
+    border-bottom: 2px solid #1c599a;
+     border-top: 2px solid #1c599a;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~BUTTON~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.button {
+  position: relative;
+  background-color: #2bbbbb;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 20px;
+    margin: 4px 2px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~CARD VIEW ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD VIEW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.column-cardview {
+  float: left;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row-cardview:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 700px) {
+  .column-cardview  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column-cardview  {
+    width: 100%;
+  }
+}
+
+.heading-cardview{
+    color:#2d5787;
+    font-size: 16px;
+}
+
+.para-cardview{
+    font-size: 12px;
+}
+
+.hr-cardview{
+    border:1px solid #bbbbbb;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+   
+}
+
+.card:hover {
+  box-shadow: 8px 16px 16px 0 rgba(0,0,0,0.2);
+     background-color: #f5f7f8;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+#rcorners1 {
+  border-radius: 8px;
+  background: #eef9ff;
+  opacity: 2px;
+overflow: hidden;
+}
+
+.h5-cardview{
+        margin-top: 0 auto;
+    padding-left: 5px;
+}
+
+.imgh5-cardview{
+    padding-right: 5px;
+}
+
+.hrh5-cardview{
+    border:1px dashed black;
+}
+
+.parah5-cardview{
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~Elective Committee Style~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#myDIV,
+#myDIV2,
+#myDIV3,
+#myDIV4,
+#myDIV5,
+#myDIV6,
+#myDIV7,
+#myDIV8,
+#myDIV9,
+#myDIV10,
+#myDIV11,
+#myDIV12,
+#myDIV13,
+#myDIV14,
+#myDIV15,
+#myDIV16,
+#myDIV17{
+display:none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+#myDIV101{
+    display: block;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+#myDIV102{
+    display: block;
+  width: 100%;
+  padding: 50px 0;
+  background-color: white;
+  margin-top: 20px;
+}
+
+#myDIV102 table{
+    width: 50%;
+	margin-left: 300px;
+    	padding: 20px;
+
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr{background-color: #f2f2f2;
+min-width: 250;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #91dddd;
+  color:dimgrey;
+}
+
+#menu{
+        float:right;
+        width:200px;
+        height:650px;
+        border-bottom:none;
+        border-left:solid 1px;
+
+}
+
+
+#myDIV img, #myDIV2 img, #myDIV3 img, #myDIV4 img, #myDIV5 img, #myDIV5 img, #myDIV6 img, #myDIV7 img, #myDIV8 img, #myDIV9 img, #myDIV10 img, #myDIV11 img, #myDIV12 img, #myDIV13 img, #myDIV14 img, #myDIV15 img, #myDIV16 img, #myDIV17 img, #myDIV101 img{
+        width:150px; height:200px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~Registration form~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.form-style-2{
+	max-width: 500px;
+	padding: 20px 12px 10px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.form-style-2 label{
+	display: block;
+	margin: 0px 0px 35px 0px;
+}
+.form-style-2 label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form-style-2 span.required{
+	color:red;
+}
+.form-style-2 .tel-number-field{
+	width: 40px;
+	text-align: center;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field{
+	width: 48%;	
+}
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+ .form-style-2 .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+	border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: #FF8500;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+	background: #EA7B00;
+	color: #fff;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~Photo Gallery~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media only screen and (max-width: 650px) {
+    #login{
+    margin-left: 50px;
+    }
+    
+    table{
+        overflow: auto;
+        display: block;
+    }
+}
+
+
