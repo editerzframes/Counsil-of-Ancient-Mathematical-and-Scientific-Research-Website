@@ -1,0 +1,90 @@
+<?php
+
+$var1 = $_GET['value'];
+ echo '<script language="javascript">';
+  echo 'alert(' .$var1. ')';  //not showing an alert box.
+      echo '</script>';
+     include ('dbConfig.php');
+    
+$sql = "SELECT id, role, firstName, lastName, affliation, biography, file_name FROM electivecommittee WHERE id='".$var1."'";
+$result = $db->query($sql);
+
+$row = $result->fetch_assoc();
+$role = $row["role"];
+$firstName = $row["firstName"];
+$lastName = $row["lastName"];
+$affliation = $row["affliation"];
+$biography = $row["biography"];
+$fileName = $row['file_name'];
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Home Page</title>
+<link href="http://localhost/gulbir/admindashboard/electivecommitteestyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECOND HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+  <div id="top-text">
+    <img class="logo floatLeft" alt="Logo"  />
+      
+    <h1 class="textheader2 textheader2-1size" style="text-align:left">SOFT COMPUTING RESEARCH SOCIETY</h1>
+    <h2 class="textheader2 textheader2-2size" style="text-align:left">Registered under the societies registration act XXI of 1860</h2>
+    </div>
+
+<!--    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<button style="margin-left:30px; margin-top:30px; float:left" class="button" onClick="parent.location='http://localhost/gulbir/admindashboard/profile.php'">Back ></button>
+
+    <button style="margin-right:30px; margin-top:30px; float:right" class="button" onClick="parent.location='http://localhost/gulbir/admindashboard/logout.php'">Logout</button>
+    
+    
+<div class="form-style-8">
+  <h2>Enter the Following Details</h2>
+  <form action="update.php" method="post" enctype="multipart/form-data">
+    
+    
+      <select id="role" name="role" >
+  <option value="President">President</option>
+  <option value="Vice President">Vice President</option>
+  <option value="Secretary">Secretary</option>
+  <option value="Treasurer">Treasurer</option>
+  <option value="Team Members">Team Members</option>
+</select>
+      
+    <input style="width:45%;float:left" type="text" id="fisrtname" name="firstname" value= "<?php echo $firstName ?>" placeholder="First Name"  required/>
+     <input style="width:45%; float:right" type="text" id="lastname" name="lastname" value= "<?php echo $lastName ?>" placeholder="Last Name" required/>
+      
+  <input type="hidden" id="var1" name="var1" value="<?php echo $var1 ?>" />
+
+    <input type="text" id="affliation" name="affliation" value= "<?php echo $affliation ?>" placeholder="Affliation" required/>
+          <textarea placeholder="Biography" id="biography"  name="biography" onkeyup="adjust_textarea(this)" required><?php echo $biography ?></textarea>
+      
+       <input type="file" name="file">
+    <input name="submit" type="submit" value="Login" onClick="updatefun()"/>
+      
+      <script>
+      var objSelect = document.getElementById("role");
+
+//Set selected
+setSelectedValue(objSelect);
+
+function setSelectedValue(selectObj) {
+    for (var i = 0; i < selectObj.options.length; i++) {
+        if (selectObj.options[i].text== "<?php echo $role ?>") {
+            selectObj.options[i].selected = true;
+            return;
+        }
+    }
+}</script>
+      
+<br><br>
+      <h5><b>Note:</b> &nbsp; Please choose the .jpg or .png images</h5>
+  </form>
+</div>
+    
+
+
+
+</body>
+</html> 
