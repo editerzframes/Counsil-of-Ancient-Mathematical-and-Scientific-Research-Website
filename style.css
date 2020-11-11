@@ -1,0 +1,179 @@
+
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+body{
+   background-image: url(background.jpg);
+}
+#main {
+width:960px;
+margin:20px auto;
+font-family:raleway
+}
+span {
+color:red
+}
+h1{
+    font-family:sans-serif;
+}
+h2 {
+font-family: cursive;
+text-align:center;
+border-radius:10px 10px 0 0;
+margin:-10px -40px;
+padding:15px
+}
+hr {
+border:50;
+border-bottom:3px solid brown;
+margin:10px -40px;
+margin-bottom:30px;
+margin-left: 75px;
+margin-right: 75px;
+}
+#login {
+width:300px;
+float:left;
+background-color: #ccc;
+border-radius:10px;
+font-family:raleway;
+border:2px solid brown;
+padding:10px 40px 25px;
+margin-top:50px;
+    margin-left: 300px;
+}
+input[type=text],input[type=password] {
+width:99.5%;
+padding:10px;
+margin-top:8px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:16px;
+font-family:raleway
+}
+input[type=submit] {
+width:100%;
+background-color:#FFBC00;
+color:#fff;
+border:2px solid brown;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:15px;
+margin-left: 10px;
+margin-top: 10px;
+}
+#profile {
+padding:50px;
+border:1px dashed grey;
+font-size:20px;
+background-color:#DCE6F7
+}
+#logout {
+float:right;
+padding:5px;
+background-color: antiquewhite;
+border:solid 2px gray
+}
+#top-text{
+    background-color:brown;
+    border:5px solid #FFCB00;
+    position:relative;
+width:100%;
+margin-bottom:auto;
+margin-left:auto;
+margin-right:auto;
+text-align: center;
+}
+a {
+text-decoration:none;
+color:#6495ed
+}
+i {
+color:#6495ed
+}
+table {
+  width:100%;
+}
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 td{
+  background-color: #edf3f5;
+}
+
+#t01 th {
+  background-color: #dcf2fa;
+  color: black;
+}
+.footer {
+  position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #faed75;
+   color: brown;
+   text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+@media only screen and (max-width: 650px) {
+    #login{
+    margin-left: 50px;
+    }
+    
+    table{
+        overflow: auto;
+        display: block;
+    }
+}
+
+.imageStyle{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px; 
+}
+
+.image-style{
+    
+    text-align: right;
+    
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.logo {
+    width: 140px;
+    height: 100px;
+    content: url("http://localhost/mishra/mishra1/IMG-20190825-WA0024final.png");
+}
+
+.logo1 {
+    width: 140px;
+    height: 100px;
+    content: url("http://localhost/mishra/mishra1/capture.png");
+}
+
+
+.logoHeader {
+    height: 120px;
+/*    vertical-align: middle;*/
+    text-align: center; 
+}
+
+.floatLeft { float: left; 
+margin-top: 20px;
+margin-left: 20px;
+margin-bottom: 10px}
+
+.floatRight { float: right; 
+margin-top: 20px;
+margin-right: 20px;
+margin-bottom: 10px;}
